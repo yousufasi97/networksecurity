@@ -20,11 +20,11 @@ from networksecurity.utils.main_utils.utils import save_numpy_array_data,save_ob
 
 class DataTransformation:
     def __init__(self,data_validation_artifact:DataValidationArtifact,
-                 data_tranformation_config:DataTransformationConfig):
+                 data_transformation_config:DataTransformationConfig):
         
         try:
             self.data_validation_artifact:DataValidationArtifact=data_validation_artifact
-            self.data_transformation_config:DataTransformationConfig=data_tranformation_config
+            self.data_transformation_config:DataTransformationConfig=data_transformation_config
         except Exception as e:
             raise NetworkSecurityException(e,sys)
     @staticmethod
@@ -99,5 +99,6 @@ class DataTransformation:
 
 
             )
+            return data_transformation_artifact
         except Exception as e:
             raise NetworkSecurityException(e,sys)
