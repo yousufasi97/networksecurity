@@ -1,27 +1,28 @@
+# 🛡️ Network Security ML Pipeline with FastAPI, MLflow, Docker, and AWS EC2  
 
-#  Network Security ML Pipeline with FastAPI, Docker, and AWS EC2  
+### 🧩 About this Project  
+This project combines **machine learning and cybersecurity** to detect **phishing and malicious network traffic** automatically.  
+What began as a small experiment grew into a complete **end-to-end MLOps system** — built with FastAPI, MLflow, MongoDB, Docker, GitHub Actions, and deployed on **AWS EC2**.  
 
-###  About this Project  
-This project is my attempt to bring together **machine learning and practical cybersecurity** — building an intelligent system that can automatically detect **phishing and malicious network activity**.  
-It started as a simple data-processing experiment but evolved into a **fully functional MLOps pipeline** powered by FastAPI, Docker, MongoDB, and GitHub Actions, and finally deployed on **AWS EC2**.  
-
-The system can train itself on raw network data, validate and transform the inputs, and deploy a machine-learning model that predicts security threats in real time through an API endpoint.  
+The pipeline can train itself on raw data, validate and transform it, select the best-performing model, and serve real-time predictions via a FastAPI endpoint.  
 
 ---
 
-##  Key Features  
-- **End-to-end ML workflow:** from data ingestion and validation to model training and deployment  
-- **FastAPI interface** for real-time predictions and retraining  
+## 🚀 Key Features  
+- **End-to-end ML workflow**: ingestion → validation → transformation → model training → deployment  
+- **Trains multiple models automatically** (Logistic Regression, KNN, Decision Tree, Random Forest, AdaBoost, Gradient Boosting)  
+- **Evaluates models** using F1-score, Precision, and Recall — tracked in **MLflow via DagsHub**  
+- **FastAPI interface** for live predictions and retraining  
 - **MongoDB integration** for secure data handling  
-- **Containerized with Docker** for portability and scalability  
-- **Continuous Integration & Delivery** using GitHub Actions  
-- **Deployed on AWS EC2** for cloud-based accessibility  
-- **Custom logging and exception handling** for reliability and debugging  
+- **Containerized with Docker** and automated CI/CD via GitHub Actions  
+- **Deployed on AWS EC2** for real-time cloud inference  
+- Custom **logging** and **exception handling** for production reliability  
 
 ---
 
-##  Tech Stack  
+## 🧠 Tech Stack  
 **Languages & Frameworks:** Python, FastAPI  
 **ML Libraries:** Scikit-learn, Pandas, NumPy  
+**MLOps & Tracking:** MLflow, DagsHub  
 **Database:** MongoDB  
-**DevOps Tools:** Docker, GitHub Actions, AWS EC2, dotenv 
+**DevOps Tools:** Docker, GitHub Actions, AWS EC2, dotenv  
